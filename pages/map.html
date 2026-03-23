@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>사찰 탐색 - 한국의 사찰</title>
+  <meta name="description" content="지도에서 전국 사찰을 탐색하세요. 지역 필터, 템플스테이 필터로 원하는 사찰을 찾을 수 있습니다.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;700&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/reset.css">
+  <link rel="stylesheet" href="../assets/css/variables.css">
+  <link rel="stylesheet" href="../assets/css/common.css">
+  <link rel="stylesheet" href="../assets/css/map.css">
+
+  <!-- Kakao Maps API -->
+  <!-- ⚠️  아래 YOUR_KAKAO_APP_KEY를 실제 Kakao Developers 앱 키로 교체하세요 -->
+  <script type="text/javascript"
+    src="//dapi.kakao.com/v2/maps/sdk.js?appkey=YOUR_KAKAO_APP_KEY&libraries=services,clusterer"
+    onerror="console.warn('Kakao Maps API를 불러오지 못했습니다. APP KEY를 확인해 주세요.')">
+  </script>
+</head>
+<body>
+  <div id="header"></div>
+
+  <div class="map-page">
+
+    <!-- Sidebar -->
+    <aside class="map-sidebar">
+      <div class="sidebar-header">
+        <h2 class="sidebar-title">사찰 탐색</h2>
+        <div class="search-box">
+          <input type="text" id="sidebarSearch" placeholder="사찰명, 지역 검색..." autocomplete="off">
+        </div>
+        <div class="filter-row">
+          <select class="filter-select" id="regionSelect">
+            <option value="">전체 지역</option>
+            <option value="서울">서울</option>
+            <option value="경기">경기</option>
+            <option value="강원">강원</option>
+            <option value="충청">충청</option>
+            <option value="경북">경북</option>
+            <option value="경남">경남</option>
+            <option value="전남">전남</option>
+            <option value="전북">전북</option>
+            <option value="부산">부산</option>
+            <option value="제주">제주</option>
+          </select>
+          <label class="filter-check" title="템플스테이를 운영하는 사찰만 표시">
+            <input type="checkbox" id="tsOnlyCheck">
+            <span>템플스테이</span>
+          </label>
+        </div>
+      </div>
+
+      <div class="result-count">
+        <span id="resultCount">불러오는 중...</span>
+      </div>
+
+      <div class="temple-list" id="templeList">
+        <div class="loading-spinner"><div class="spinner"></div></div>
+      </div>
+    </aside>
+
+    <!-- Map area -->
+    <div class="map-area">
+      <div id="kakaoMap"></div>
+    </div>
+
+  </div>
+
+  <div id="footer"></div>
+
+  <script type="module" src="../assets/js/pages/map.js"></script>
+</body>
+</html>

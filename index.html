@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>한국의 사찰 - 전국 사찰 여행 가이드</title>
+  <meta name="description" content="전국 사찰 정보를 한 곳에서. 템플스테이 예약, 사찰 지도, 주변 관광지 정보를 제공합니다.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;700&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/reset.css">
+  <link rel="stylesheet" href="./assets/css/variables.css">
+  <link rel="stylesheet" href="./assets/css/common.css">
+  <link rel="stylesheet" href="./assets/css/main.css">
+</head>
+<body>
+  <div id="header"></div>
+
+  <main class="page-wrapper" style="padding-top:0;">
+
+    <!-- ── Hero ── -->
+    <section class="hero">
+      <div class="hero-bg"></div>
+      <div class="hero-content">
+        <div class="hero-eyebrow">Korea Temple Guide</div>
+        <h1 class="hero-title">
+          마음이 쉬어가는<br>
+          <em>한국의 사찰</em>
+        </h1>
+        <p class="hero-subtitle">
+          전국 수천 곳의 사찰 정보를 한 곳에서.<br>
+          템플스테이부터 주변 관광지까지, 완벽한 사찰 여행을 계획하세요.
+        </p>
+        <div class="hero-search">
+          <input
+            type="text"
+            id="heroSearch"
+            placeholder="사찰 이름, 지역명으로 검색..."
+            autocomplete="off">
+          <button id="heroSearchBtn">검색</button>
+        </div>
+        <div class="hero-stats">
+          <div class="hero-stat">
+            <div class="hero-stat-number">8+</div>
+            <div class="hero-stat-label">등록 사찰</div>
+          </div>
+          <div class="hero-stat">
+            <div class="hero-stat-number">7</div>
+            <div class="hero-stat-label">템플스테이</div>
+          </div>
+          <div class="hero-stat">
+            <div class="hero-stat-number">5</div>
+            <div class="hero-stat-label">유네스코 유산</div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-scroll">SCROLL</div>
+    </section>
+
+    <!-- ── Region ── -->
+    <section class="region-section">
+      <div class="inner">
+        <div class="section-header">
+          <span class="section-eyebrow">지역별 탐색</span>
+          <h2 class="section-title">어디로 떠나실 건가요?</h2>
+          <p class="section-subtitle">지역을 선택하면 해당 지역의 사찰을 바로 확인할 수 있습니다.</p>
+        </div>
+        <div class="region-grid" id="regionGrid">
+          <!-- JS로 동적 생성 -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Featured Temples ── -->
+    <section class="featured-section">
+      <div class="inner">
+        <div class="section-header">
+          <span class="section-eyebrow">주요 사찰</span>
+          <h2 class="section-title">꼭 한번 방문해야 할<br>대한민국의 사찰들</h2>
+          <p class="section-subtitle">유네스코 세계문화유산부터 도심 속 힐링 명소까지, 엄선된 사찰을 소개합니다.</p>
+        </div>
+        <div class="temples-grid" id="featuredGrid">
+          <!-- JS로 동적 생성 -->
+        </div>
+        <div class="view-all-wrap">
+          <a href="./pages/map.html" class="btn btn-primary btn-lg">
+            전체 사찰 보기 →
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Templestay Banner ── -->
+    <section class="ts-banner">
+      <div class="inner">
+        <div class="ts-banner-icon">🧘</div>
+        <h2>일상을 내려놓는 특별한 경험,<br>템플스테이</h2>
+        <p>천년 고찰의 새벽 예불 소리와 함께 깨어나세요.<br>
+        발우공양, 참선, 다도 체험으로 진정한 쉼을 만나보세요.</p>
+        <div class="ts-banner-features">
+          <div class="ts-feature">
+            <div class="ts-feature-num">7</div>
+            <div class="ts-feature-label">운영 사찰</div>
+          </div>
+          <div class="ts-feature">
+            <div class="ts-feature-num">3</div>
+            <div class="ts-feature-label">프로그램 유형</div>
+          </div>
+          <div class="ts-feature">
+            <div class="ts-feature-num">6만원~</div>
+            <div class="ts-feature-label">1박 가격</div>
+          </div>
+        </div>
+        <a href="./pages/templestay.html" class="btn btn-gold btn-lg">
+          템플스테이 자세히 보기 →
+        </a>
+      </div>
+    </section>
+
+    <!-- ── Season Section ── -->
+    <section class="season-section">
+      <div class="inner">
+        <div class="section-header">
+          <span class="section-eyebrow">계절별 추천</span>
+          <h2 class="section-title">사계절, 저마다 다른 아름다움</h2>
+          <p class="section-subtitle">계절마다 달라지는 사찰의 아름다움을 경험해보세요.</p>
+        </div>
+        <div class="season-tabs">
+          <button class="season-tab active" data-season="spring">🌸 봄</button>
+          <button class="season-tab" data-season="summer">🌿 여름</button>
+          <button class="season-tab" data-season="autumn">🍂 가을</button>
+          <button class="season-tab" data-season="winter">❄️ 겨울</button>
+        </div>
+
+        <div id="season-spring" class="season-panel active">
+          <div class="season-card">
+            <div class="season-card-text">
+              <h3>🌸 봄 — 벚꽃과 매화의 계절</h3>
+              <p>봄이면 사찰 경내에 벚꽃과 홍매화가 만발합니다. 오랜 세월을 함께한 고목들이 꽃을 피울 때, 사찰은 세상에서 가장 아름다운 정원이 됩니다.</p>
+              <ul>
+                <li>선암사 — 수백 년 된 홍매화 고목, 3월 중순~4월</li>
+                <li>화엄사 — 각황전 앞 홍매화·벚꽃, 3~4월</li>
+                <li>통도사 — 영축산 진달래, 4월</li>
+              </ul>
+              <a href="./pages/map.html?region=전남" class="btn btn-primary" style="margin-top:var(--space-5);">전남 사찰 보기</a>
+            </div>
+            <div class="season-card-img">
+              <img src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=600&q=80" alt="봄 사찰" loading="lazy">
+            </div>
+          </div>
+        </div>
+
+        <div id="season-summer" class="season-panel">
+          <div class="season-card">
+            <div class="season-card-text">
+              <h3>🌿 여름 — 울창한 숲과 계곡</h3>
+              <p>더위를 피해 시원한 계곡과 울창한 숲으로 둘러싸인 산중 사찰을 찾아보세요. 맑은 공기와 물소리 속에서 여름의 피서를 즐길 수 있습니다.</p>
+              <ul>
+                <li>해인사 — 홍류동 계곡과 함께, 6~8월</li>
+                <li>화엄사 — 지리산 계곡 트레킹, 7~8월</li>
+                <li>통도사 — 영축산 산행, 6~9월</li>
+              </ul>
+              <a href="./pages/map.html?region=경남" class="btn btn-primary" style="margin-top:var(--space-5);">경남 사찰 보기</a>
+            </div>
+            <div class="season-card-img">
+              <img src="https://images.unsplash.com/photo-1518710843675-2540dd79065c?w=600&q=80" alt="여름 사찰" loading="lazy">
+            </div>
+          </div>
+        </div>
+
+        <div id="season-autumn" class="season-panel">
+          <div class="season-card">
+            <div class="season-card-text">
+              <h3>🍂 가을 — 단풍과 고즈넉함</h3>
+              <p>붉고 황금빛으로 물든 단풍잎이 고풍스러운 기와지붕과 어우러지는 가을 사찰은 한 폭의 수묵화를 연상시킵니다.</p>
+              <ul>
+                <li>불국사 — 경내 은행나무·단풍, 10~11월</li>
+                <li>해인사 — 가야산 단풍, 10월 중순~11월</li>
+                <li>선암사 — 조계산 단풍 숲길, 10~11월</li>
+              </ul>
+              <a href="./pages/map.html?region=경북" class="btn btn-primary" style="margin-top:var(--space-5);">경북 사찰 보기</a>
+            </div>
+            <div class="season-card-img">
+              <img src="https://images.unsplash.com/photo-1542652694-40abf526446e?w=600&q=80" alt="가을 사찰" loading="lazy">
+            </div>
+          </div>
+        </div>
+
+        <div id="season-winter" class="season-panel">
+          <div class="season-card">
+            <div class="season-card-text">
+              <h3>❄️ 겨울 — 설경과 새벽 예불</h3>
+              <p>눈 덮인 사찰의 새벽, 맑은 공기와 함께 울려 퍼지는 범종 소리. 겨울 사찰의 고요함은 어느 계절과도 비교할 수 없는 감동을 줍니다.</p>
+              <ul>
+                <li>해동용궁사 — 새해 첫 해돋이, 1월 1일</li>
+                <li>조계사 — 도심 눈 쌓인 경내, 12~2월</li>
+                <li>해인사 — 설경 속 팔만대장경, 12~2월</li>
+              </ul>
+              <a href="./pages/map.html" class="btn btn-primary" style="margin-top:var(--space-5);">전국 사찰 보기</a>
+            </div>
+            <div class="season-card-img">
+              <img src="https://images.unsplash.com/photo-1470093851219-69951fcbb533?w=600&q=80" alt="겨울 사찰" loading="lazy">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Lightbox (unused on main, but consistent) -->
+  <div id="lightboxModal" class="modal-overlay">
+    <div class="modal-content">
+      <button class="modal-close" onclick="document.getElementById('lightboxModal').classList.remove('open')">✕</button>
+      <img id="lightboxImg" src="" alt="갤러리">
+    </div>
+  </div>
+
+  <div id="footer"></div>
+
+  <script type="module" src="./assets/js/pages/main.js"></script>
+</body>
+</html>

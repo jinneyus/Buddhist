@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>템플스테이 - 한국의 사찰</title>
+  <meta name="description" content="전국 사찰 템플스테이 정보. 휴식형, 체험형, 당일형 프로그램 안내와 예약 방법을 확인하세요.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;700&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/reset.css">
+  <link rel="stylesheet" href="../assets/css/variables.css">
+  <link rel="stylesheet" href="../assets/css/common.css">
+  <link rel="stylesheet" href="../assets/css/templestay.css">
+</head>
+<body>
+  <div id="header"></div>
+
+  <main class="ts-page">
+
+    <!-- ── Hero ── -->
+    <section class="ts-hero">
+      <div class="ts-hero-inner">
+        <div class="ts-hero-eyebrow">Temple Stay</div>
+        <h1 class="ts-hero-title">
+          일상을 내려놓고<br>나를 찾아가는 여정
+        </h1>
+        <p class="ts-hero-subtitle">
+          천년 고찰의 새벽 예불 소리에 눈을 뜨고,<br>
+          자연 속에서 진정한 휴식을 경험하세요.
+        </p>
+        <div class="ts-hero-badges">
+          <span class="ts-hero-badge">🧘 참선·명상</span>
+          <span class="ts-hero-badge">🍵 발우공양·다도</span>
+          <span class="ts-hero-badge">🌄 새벽 예불</span>
+          <span class="ts-hero-badge">🪷 108배</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── What is Templestay ── -->
+    <section class="ts-intro">
+      <div class="inner">
+        <div class="ts-intro-text">
+          <h2>템플스테이란?</h2>
+          <p>
+            템플스테이는 1,700년 한국 불교 문화의 산실인 전통사찰에서
+            스님들의 수행 생활을 체험하는 문화 관광 프로그램입니다.
+            2002년 한·일 월드컵을 계기로 시작되어, 현재 전국 130여 개 사찰에서
+            연간 50만 명 이상이 참여하는 대표적인 문화 체험으로 성장했습니다.
+          </p>
+          <p>
+            일상의 바쁜 생활에서 벗어나 천년 고찰의 고요함 속에서
+            참선과 예불, 발우공양, 다도 체험을 통해 몸과 마음을 정화하고
+            내면의 평화를 찾는 특별한 시간을 경험할 수 있습니다.
+          </p>
+          <div class="ts-intro-points">
+            <div class="ts-intro-point">
+              <div class="ts-intro-point-icon">🌄</div>
+              <div class="ts-intro-point-text">
+                <h4>새벽 예불</h4>
+                <p>이른 새벽, 범종 소리와 함께 시작되는 예불로 하루를 열어보세요.</p>
+              </div>
+            </div>
+            <div class="ts-intro-point">
+              <div class="ts-intro-point-icon">🍚</div>
+              <div class="ts-intro-point-text">
+                <h4>발우공양</h4>
+                <p>스님들의 식사 방법인 발우공양으로 음식의 소중함을 배웁니다.</p>
+              </div>
+            </div>
+            <div class="ts-intro-point">
+              <div class="ts-intro-point-icon">🧘</div>
+              <div class="ts-intro-point-text">
+                <h4>참선·명상</h4>
+                <p>마음을 비우고 자신을 돌아보는 참선과 명상 시간.</p>
+              </div>
+            </div>
+            <div class="ts-intro-point">
+              <div class="ts-intro-point-icon">🍵</div>
+              <div class="ts-intro-point-text">
+                <h4>다도 체험</h4>
+                <p>스님과 함께하는 차 한잔으로 마음의 여유를 찾아보세요.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="ts-intro-img">
+          <img src="https://images.unsplash.com/photo-1531068197504-3bc4bc2e28c2?w=600&q=85" alt="템플스테이 체험" loading="lazy">
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Program Types ── -->
+    <section class="ts-programs-section" id="programs">
+      <div class="inner">
+        <div class="section-header">
+          <span class="section-eyebrow">프로그램 유형</span>
+          <h2 class="section-title">나에게 맞는 프로그램을<br>선택하세요</h2>
+        </div>
+
+        <div class="program-tabs">
+          <button class="program-tab active" data-prog="rest">🌙 휴식형</button>
+          <button class="program-tab" data-prog="exp">🎋 체험형</button>
+          <button class="program-tab" data-prog="day">☀️ 당일형</button>
+        </div>
+
+        <div id="prog-rest" class="program-panel active">
+          <div class="program-info">
+            <h3>🌙 휴식형 템플스테이</h3>
+            <p>
+              정해진 프로그램 없이 사찰에서 자유롭게 쉬어가는 프로그램입니다.
+              기본 생활 안내만 받고 사찰의 공간과 자연 속에서 자유롭게 시간을 보낼 수 있습니다.
+              바쁜 일상에 지친 분들, 혼자만의 시간이 필요한 분들에게 추천합니다.
+            </p>
+            <div class="program-features">
+              <div class="program-feature">자유로운 일정으로 나만의 힐링 시간</div>
+              <div class="program-feature">새벽 예불 자유 참석 (강제 없음)</div>
+              <div class="program-feature">사찰 내 자유 탐방 및 명상</div>
+              <div class="program-feature">채식 공양 제공 (아침·저녁)</div>
+              <div class="program-feature">개인 수행 공간 제공</div>
+            </div>
+          </div>
+          <div class="program-img">
+            <img src="https://images.unsplash.com/photo-1545569341-9eb8b30979d9?w=600&q=80" alt="휴식형 템플스테이" loading="lazy">
+          </div>
+        </div>
+
+        <div id="prog-exp" class="program-panel">
+          <div class="program-info">
+            <h3>🎋 체험형 템플스테이</h3>
+            <p>
+              스님의 지도하에 사찰의 전통 프로그램을 체계적으로 체험하는 프로그램입니다.
+              예불, 참선, 발우공양, 다도, 108배, 연꽃 만들기 등 다양한 활동을 통해
+              한국 불교 문화를 깊이 경험할 수 있습니다.
+            </p>
+            <div class="program-features">
+              <div class="program-feature">새벽 예불 및 저녁 예불 참여</div>
+              <div class="program-feature">발우공양 체험</div>
+              <div class="program-feature">참선·명상 지도</div>
+              <div class="program-feature">108배 수행</div>
+              <div class="program-feature">전통 공예(연등·염주) 만들기</div>
+              <div class="program-feature">스님과의 차담(茶談)</div>
+            </div>
+          </div>
+          <div class="program-img">
+            <img src="https://images.unsplash.com/photo-1542652694-40abf526446e?w=600&q=80" alt="체험형 템플스테이" loading="lazy">
+          </div>
+        </div>
+
+        <div id="prog-day" class="program-panel">
+          <div class="program-info">
+            <h3>☀️ 당일형 템플스테이</h3>
+            <p>
+              숙박 없이 하루 동안 사찰 문화를 체험하는 프로그램입니다.
+              바쁜 직장인이나 단체 방문객에게 적합하며, 반나절~하루 일정으로
+              사찰의 주요 문화 체험을 압축적으로 경험할 수 있습니다.
+            </p>
+            <div class="program-features">
+              <div class="program-feature">반나절 또는 하루 일정</div>
+              <div class="program-feature">사찰 예절 교육</div>
+              <div class="program-feature">전통 공예 체험</div>
+              <div class="program-feature">발우공양 체험</div>
+              <div class="program-feature">명상·참선 체험</div>
+            </div>
+          </div>
+          <div class="program-img">
+            <img src="https://images.unsplash.com/photo-1518710843675-2540dd79065c?w=600&q=80" alt="당일형 템플스테이" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── TS Temple List ── -->
+    <section class="ts-list-section">
+      <div class="inner">
+        <div class="section-header">
+          <span class="section-eyebrow">참여 사찰</span>
+          <h2 class="section-title">템플스테이 운영 사찰</h2>
+          <p class="section-subtitle">현재 템플스테이를 운영 중인 사찰들을 소개합니다.</p>
+        </div>
+        <div class="ts-filter-row">
+          <select class="ts-filter-select" id="tsRegionFilter">
+            <option value="">전체 지역</option>
+            <option value="서울">서울</option>
+            <option value="경북">경북</option>
+            <option value="경남">경남</option>
+            <option value="전남">전남</option>
+            <option value="부산">부산</option>
+          </select>
+          <select class="ts-filter-select" id="tsProgramFilter">
+            <option value="">전체 프로그램</option>
+            <option value="휴식형">휴식형</option>
+            <option value="체험형">체험형</option>
+            <option value="당일형">당일형</option>
+          </select>
+        </div>
+        <div class="ts-temples-grid" id="tsTemplesGrid">
+          <div class="loading-spinner"><div class="spinner"></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Price Guide ── -->
+    <section class="ts-price-section" id="price">
+      <div class="inner">
+        <div class="section-header">
+          <span class="section-eyebrow">가격 안내</span>
+          <h2 class="section-title">템플스테이 가격표</h2>
+          <p class="section-subtitle">아래 가격은 1인 기준이며, 사찰에 따라 다를 수 있습니다.</p>
+        </div>
+        <table class="price-table">
+          <thead>
+            <tr>
+              <th>프로그램 유형</th>
+              <th>기간</th>
+              <th>가격 (1인)</th>
+              <th>포함 내역</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>휴식형</td>
+              <td>1박 2일</td>
+              <td class="price-tag">60,000 ~ 80,000원</td>
+              <td>숙박, 공양(2끼), 기본 프로그램</td>
+            </tr>
+            <tr>
+              <td>체험형</td>
+              <td>1박 2일</td>
+              <td class="price-tag">65,000 ~ 90,000원</td>
+              <td>숙박, 공양(3끼), 전 프로그램</td>
+            </tr>
+            <tr>
+              <td>당일형</td>
+              <td>4~8시간</td>
+              <td class="price-tag">25,000 ~ 40,000원</td>
+              <td>공양(1끼), 체험 재료비 포함</td>
+            </tr>
+            <tr>
+              <td>2박 3일 심화</td>
+              <td>2박 3일</td>
+              <td class="price-tag">120,000 ~ 160,000원</td>
+              <td>숙박, 전 공양, 심화 수행 프로그램</td>
+            </tr>
+          </tbody>
+        </table>
+        <p style="margin-top:var(--space-5);font-size:var(--text-sm);color:var(--color-text-muted);">
+          ※ 어린이(만 7세 이상) 50% 할인 / 외국인 영어 프로그램 별도 운영 / 단체 예약 시 할인 가능
+        </p>
+      </div>
+    </section>
+
+    <!-- ── Reservation ── -->
+    <section class="ts-reservation">
+      <div class="inner">
+        <h2>지금 바로 예약하세요</h2>
+        <p>
+          한국불교문화사업단의 공식 예약 시스템을 통해<br>
+          원하는 사찰과 날짜를 선택하여 예약할 수 있습니다.
+        </p>
+        <div class="reservation-steps">
+          <div class="reservation-step">
+            <div class="step-num">1</div>
+            <div class="step-label">사찰 선택</div>
+          </div>
+          <div class="step-arrow">→</div>
+          <div class="reservation-step">
+            <div class="step-num">2</div>
+            <div class="step-label">날짜·인원</div>
+          </div>
+          <div class="step-arrow">→</div>
+          <div class="reservation-step">
+            <div class="step-num">3</div>
+            <div class="step-label">온라인 신청</div>
+          </div>
+          <div class="step-arrow">→</div>
+          <div class="reservation-step">
+            <div class="step-num">4</div>
+            <div class="step-label">입금 확인</div>
+          </div>
+          <div class="step-arrow">→</div>
+          <div class="reservation-step">
+            <div class="step-num">5</div>
+            <div class="step-label">참가 확정</div>
+          </div>
+        </div>
+        <a href="https://www.templestay.com" target="_blank" rel="noopener" class="btn btn-gold btn-lg">
+          공식 예약 사이트 바로가기 ↗
+        </a>
+      </div>
+    </section>
+
+    <!-- ── FAQ ── -->
+    <section class="ts-faq" id="faq">
+      <div class="inner">
+        <div class="section-header">
+          <span class="section-eyebrow">자주 묻는 질문</span>
+          <h2 class="section-title">궁금한 점이 있으신가요?</h2>
+        </div>
+        <div class="faq-list">
+          <div class="faq-item">
+            <button class="faq-question">
+              불교 신자가 아니어도 참가할 수 있나요?
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              네, 불교 신자가 아니어도 누구나 참가할 수 있습니다. 템플스테이는 종교 체험이 아닌 한국의 전통 문화 체험 프로그램으로, 종교에 관계없이 모든 분들을 환영합니다. 외국인도 참가 가능하며, 일부 사찰에서는 영어 프로그램도 운영합니다.
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">
+              무엇을 준비해 가야 하나요?
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              세면도구(칫솔, 수건 등), 편안한 복장, 실내화(슬리퍼)를 준비하시면 됩니다. 사찰에 따라 수련복을 대여 또는 제공하는 경우도 있습니다. 화려한 의상이나 노출이 심한 복장은 삼가 주세요. 향수나 진한 화장품도 자제를 권장합니다.
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">
+              식사는 어떻게 제공되나요?
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              사찰음식(채식)으로 공양이 제공됩니다. 육류, 생선, 파, 마늘, 양파 등 오신채(五辛菜)가 포함되지 않은 전통 사찰 음식입니다. 알레르기가 있으신 분은 사전에 사찰에 문의하시기 바랍니다. 발우공양의 경우 발우(공양 그릇)를 이용하여 식사하며, 스님에게 방법을 안내받을 수 있습니다.
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">
+              어린이도 참가할 수 있나요?
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              일반적으로 만 7세 이상의 어린이가 참가 가능합니다. 사찰마다 연령 제한이 다를 수 있으므로 예약 전 확인하시기 바랍니다. 초등학생 이상의 경우 가족 참가를 권장하며, 어린이 요금은 성인의 50% 수준입니다.
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">
+              취소나 환불은 어떻게 하나요?
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              취소는 공식 예약 사이트(templestay.com)에서 직접 하시거나 해당 사찰에 전화로 요청하실 수 있습니다. 일반적으로 입소 7일 전까지 취소 시 전액 환불, 3~6일 전 50% 환불, 2일 이내 취소 또는 무단 불참 시 환불이 불가합니다. 사찰마다 취소 정책이 다를 수 있으므로 예약 시 확인하시기 바랍니다.
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">
+              스마트폰 사용이 가능한가요?
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              템플스테이 기간 중 스마트폰 사용은 가급적 자제를 권장합니다. 특히 예불, 참선, 공양 시간에는 사용이 금지됩니다. 사진 촬영은 법당 내부를 제외하고는 대부분의 장소에서 허용되나, 스님이나 다른 참가자를 촬영할 때는 반드시 동의를 구하세요.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <div id="footer"></div>
+
+  <script type="module" src="../assets/js/pages/templestay.js"></script>
+</body>
+</html>
