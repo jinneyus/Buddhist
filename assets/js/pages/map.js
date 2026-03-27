@@ -163,14 +163,19 @@ tsCheck.addEventListener('change', () => {
 });
 
 // ── Kakao Maps SDK load ───────────────────────
-if (typeof kakao !== 'undefined') {
-  kakao.maps.load(initMap);
-} else {
-  document.getElementById('kakaoMap').innerHTML =
-    `<div style="display:flex;align-items:center;justify-content:center;height:100%;background:#f5f5f5;color:#888;flex-direction:column;gap:12px;">
-      <span style="font-size:48px">🗺️</span>
-      <p style="font-size:14px">지도를 불러오지 못했습니다.</p>
-      <p style="font-size:12px;color:#aaa;">Kakao Maps API 키 또는 도메인 등록을 확인해 주세요.</p>
-    </div>`;
-  renderAll();
+function tryInitMap(attempts) {
+  if (typeof kakao !== 'undefined') {
+    kakao.maps.load(initMap);
+  } else if (attempts > 0) {
+    setTimeout(() => tryInitMap(attempts - 1), 300);
+  } else {
+    document.getElementById('kakaoMap').innerHTML =
+      `<div style="display:flex;align-items:center;justify-content:center;height:100%;background:#f5f5f5;color:#888;flex-direction:column;gap:12px;">
+        <span style="font-size:48px">🗺️</span>
+        <p style="font-size:14px">지도를 불러오지 못했습니다.</p>
+        <p style="font-size:12px;color:#aaa;">Kakao Maps API 키 또는 도메인 등록을 확인해 주세요.</p>
+      </div>`;
+    renderAll();
+  }
 }
+tryInitMap(10);
