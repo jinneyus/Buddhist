@@ -15,7 +15,7 @@
   inset: 0;
   background:
     linear-gradient(135deg, rgba(92,46,10,.75) 0%, rgba(45,106,79,.5) 100%),
-    url('https://images.unsplash.com/photo-1545569341-9eb8b30979d9?w=1600&q=85') center/cover no-repeat;
+    url('https://cdn.sanity.io/images/nxpteyfv/goguides/bda5576bc34f7814853f49f11a3a1f55fa8e80aa-1600x1066.jpg') center/cover no-repeat;
 }
 
 .hero-content {
