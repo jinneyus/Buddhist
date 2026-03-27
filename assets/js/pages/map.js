@@ -46,6 +46,19 @@ function renderAll() {
   renderList(filtered);
   renderMarkers(filtered);
   resultCount.innerHTML = `<strong>${filtered.length}</strong>개의 사찰`;
+  fitMapToBounds(filtered);
+}
+
+function fitMapToBounds(list) {
+  if (!kakaoMap || list.length === 0) return;
+  if (list.length === 1) {
+    kakaoMap.setCenter(new kakao.maps.LatLng(list[0].lat, list[0].lng));
+    kakaoMap.setLevel(5);
+    return;
+  }
+  const bounds = new kakao.maps.LatLngBounds();
+  list.forEach(t => bounds.extend(new kakao.maps.LatLng(t.lat, t.lng)));
+  kakaoMap.setBounds(bounds);
 }
 
 function renderList(list) {
