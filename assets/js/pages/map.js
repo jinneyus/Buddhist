@@ -163,22 +163,14 @@ tsCheck.addEventListener('change', () => {
 });
 
 // ── Kakao Maps SDK load ───────────────────────
-window.kakaoMapsReady = initMap;
-
-// If SDK already loaded (cached)
-if (typeof kakao !== 'undefined' && kakao.maps) {
+if (typeof kakao !== 'undefined') {
   kakao.maps.load(initMap);
 } else {
-  // Fallback: load without map
-  window.addEventListener('DOMContentLoaded', () => {
-    if (typeof kakao === 'undefined') {
-      document.getElementById('kakaoMap').innerHTML =
-        `<div style="display:flex;align-items:center;justify-content:center;height:100%;background:#f5f5f5;color:#888;flex-direction:column;gap:12px;">
-          <span style="font-size:48px">🗺️</span>
-          <p style="font-size:14px">Kakao Maps API 키를 설정하면 지도가 표시됩니다.</p>
-          <p style="font-size:12px;color:#aaa;">pages/map.html에서 YOUR_KAKAO_APP_KEY를 교체해 주세요.</p>
-        </div>`;
-      renderAll();
-    }
-  });
+  document.getElementById('kakaoMap').innerHTML =
+    `<div style="display:flex;align-items:center;justify-content:center;height:100%;background:#f5f5f5;color:#888;flex-direction:column;gap:12px;">
+      <span style="font-size:48px">🗺️</span>
+      <p style="font-size:14px">지도를 불러오지 못했습니다.</p>
+      <p style="font-size:12px;color:#aaa;">Kakao Maps API 키 또는 도메인 등록을 확인해 주세요.</p>
+    </div>`;
+  renderAll();
 }
