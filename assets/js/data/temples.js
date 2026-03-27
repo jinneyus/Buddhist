@@ -17,9 +17,9 @@ export const temples = [
       "신라 법흥왕 때 창건되어 경덕왕 때 크게 중창된 대사찰로, 1995년 유네스코 세계문화유산으로 등재되었습니다. 다보탑과 석가탑, 청운교·백운교 등 국보급 문화재를 간직하고 있으며, 인접한 석굴암과 함께 신라 불교 예술의 정수를 보여줍니다.",
     shortDesc: "유네스코 세계문화유산, 신라 불교 예술의 정수",
     images: [
-      "https://images.unsplash.com/photo-ADqQgiStp4c?w=800&q=80",
-      "https://images.unsplash.com/photo-LW5ezhZysx4?w=800&q=80",
-      "https://images.unsplash.com/photo-uG5JgypVtLg?w=800&q=80"
+      "https://upload.wikimedia.org/wikipedia/commons/d/d7/Bulguksa-Gyeongju-Korea-2007-01.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/c/c2/Bulguksa_Dabotap_Pagode.JPG",
+      "https://upload.wikimedia.org/wikipedia/commons/7/71/Daeungjeon_at_Bulguksa_1.jpg"
     ],
     tags: ["세계문화유산", "국보", "신라", "경주"],
     templestay: {
@@ -74,9 +74,9 @@ export const temples = [
       "법보사찰(法寶寺刹)로 불리는 합천 가야산의 명찰입니다. 고려 팔만대장경을 봉안한 장경판전은 1995년 유네스코 세계문화유산으로 지정되었으며, 팔만대장경은 세계기록유산에 등재된 소중한 문화유산입니다. 통도사, 송광사와 함께 한국 3대 사찰 중 하나입니다.",
     shortDesc: "법보사찰, 팔만대장경 봉안 세계문화유산",
     images: [
-      "https://images.unsplash.com/photo-2hppN1Nax_g?w=800&q=80",
-      "https://images.unsplash.com/photo-UC1KGmaB2IE?w=800&q=80",
-      "https://images.unsplash.com/photo-gKWom1UIW0k?w=800&q=80"
+      "https://upload.wikimedia.org/wikipedia/commons/6/6c/Haeinsa_inner_sanctum_2013_05.JPG",
+      "https://upload.wikimedia.org/wikipedia/commons/0/03/Haeinsa_Seongbo_Museum.JPG",
+      "https://upload.wikimedia.org/wikipedia/commons/6/69/Haeinsa_inner_sanctum_2013_04.JPG"
     ],
     tags: ["세계문화유산", "팔만대장경", "3대사찰", "가야산"],
     templestay: {
@@ -131,9 +131,9 @@ export const temples = [
       "불보사찰(佛寶寺刹)로 불리며, 자장율사가 당나라에서 가져온 석가모니의 진신사리를 금강계단에 봉안하고 있습니다. 2018년 '산사, 한국의 산지 승원'으로 유네스코 세계문화유산에 등재되었으며, 대웅전에는 불상 대신 금강계단이 있는 것이 특징입니다.",
     shortDesc: "불보사찰, 진신사리 봉안, 유네스코 세계문화유산",
     images: [
-      "https://images.unsplash.com/photo-maNUzHiIfqo?w=800&q=80",
-      "https://images.unsplash.com/photo-9bdt03k4ujw?w=800&q=80",
-      "https://images.unsplash.com/photo-yCosNZ2jMuk?w=800&q=80"
+      "https://upload.wikimedia.org/wikipedia/commons/4/48/양산통도사삼층석탑1.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/e/ed/양산통도사삼층석탑2.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/a/af/양산통도사삼층석탑3.jpg"
     ],
     tags: ["세계문화유산", "불보사찰", "3대사찰", "진신사리"],
     templestay: {
@@ -187,9 +187,9 @@ export const temples = [
       "한국 불교의 최대 종단인 대한불교조계종의 총본산입니다. 도심 속에 위치해 연간 수백만 명의 신도와 관광객이 방문하며, 연등회 기간에는 화려한 연등 장식으로 아름다운 야경을 선사합니다. 조선시대 왕실 원찰이었던 유서 깊은 사찰입니다.",
     shortDesc: "한국 불교 총본산, 도심 속 천년 고찰",
     images: [
-      "https://images.unsplash.com/photo-t5dGNNQVwg8?w=800&q=80",
-      "https://images.unsplash.com/photo-pSyZyvbxiN4?w=800&q=80",
-      "https://images.unsplash.com/photo-zgKdO5aDDSU?w=800&q=80"
+      "https://upload.wikimedia.org/wikipedia/commons/c/cc/Korea-Seoul-Jogyesa_Main_Hall_2188-06.JPG",
+      "https://upload.wikimedia.org/wikipedia/commons/6/6c/Korea-Seoul-Jogyesa_lanterns_2183-06.JPG",
+      "https://upload.wikimedia.org/wikipedia/commons/2/2f/Korea-Seoul-Jogyesa_Chinese_Scholar_Tree_2195-06.JPG"
     ],
     tags: ["조계종 총본산", "연등회", "도심사찰", "서울"],
     templestay: {
@@ -241,9 +241,9 @@ export const temples = [
       "지리산 자락에 위치한 화엄사는 백제 시대 연기조사가 창건한 천년 고찰입니다. 국보인 각황전과 석등, 사사자삼층석탑 등 귀중한 문화재를 보유하고 있으며, 봄이면 경내 홍매화와 벚꽃이 장관을 이룹니다. 2018년 유네스코 세계문화유산에 등재되었습니다.",
     shortDesc: "지리산 품에 안긴 천년고찰, 유네스코 세계문화유산",
     images: [
-      "https://images.unsplash.com/photo-KqZaASeHqn8?w=800&q=80",
-      "https://images.unsplash.com/photo-28joUilHigc?w=800&q=80",
-      "https://images.unsplash.com/photo-XO40tVlnL2I?w=800&q=80"
+      "https://upload.wikimedia.org/wikipedia/commons/0/09/Korea-Gurye-Hwaeomsa_4999-06.JPG",
+      "https://upload.wikimedia.org/wikipedia/commons/9/90/Korea-Gurye-Hwaeomsa_5017-06.JPG",
+      "https://upload.wikimedia.org/wikipedia/commons/9/91/Korea-Gurye-Hwaeomsa_5014-06.JPG"
     ],
     tags: ["세계문화유산", "지리산", "각황전", "봄꽃"],
     templestay: {
@@ -298,9 +298,9 @@ export const temples = [
       "조계산 자락의 선암사는 고려 시대부터 내려오는 전통 방식 그대로의 아름다운 사찰입니다. 봄이면 수백 년 된 홍매화 고목이 꽃을 피워 장관을 이루며, 무지개 모양의 승선교는 천연기념물로 지정된 걸작입니다. 2018년 유네스코 세계문화유산으로 등재되었습니다.",
     shortDesc: "홍매화 만발하는 조계산의 고즈넉한 명찰",
     images: [
-      "https://images.unsplash.com/photo-cn8I7FgO7X4?w=800&q=80",
-      "https://images.unsplash.com/photo-VZG8SrrOcs4?w=800&q=80",
-      "https://images.unsplash.com/photo-_88rRx6t1ps?w=800&q=80"
+      "https://upload.wikimedia.org/wikipedia/commons/f/f7/Seonamsa_Eungjindang_11-06859.JPG",
+      "https://upload.wikimedia.org/wikipedia/commons/9/90/Seonamsa_11-06793.JPG",
+      "https://upload.wikimedia.org/wikipedia/commons/c/c2/Seonamsa_11-06844.JPG"
     ],
     tags: ["세계문화유산", "홍매화", "조계산", "승선교"],
     templestay: {
@@ -355,9 +355,9 @@ export const temples = [
       "바다를 배경으로 한 국내 유일의 해변 사찰로, 동해 바다와 기암절벽을 배경으로 한 웅장한 관음대불이 압권입니다. 새해 첫날 해돋이 명소로도 유명하며, 108 계단을 내려가면 만나는 해수관음보살상이 소원을 들어준다고 하여 매일 많은 참배객이 방문합니다.",
     shortDesc: "동해 바다 절벽 위 국내 유일의 해변 사찰",
     images: [
-      "https://images.unsplash.com/photo-18mvTADdIcc?w=800&q=80",
-      "https://images.unsplash.com/photo-LrZLe1czeDo?w=800&q=80",
-      "https://images.unsplash.com/photo-EnNx92rCVWY?w=800&q=80"
+      "https://upload.wikimedia.org/wikipedia/commons/d/d4/Haedong_Yonggungsa_Temple_view_on_sea.JPG",
+      "https://upload.wikimedia.org/wikipedia/commons/8/84/Haedong_yonggungsa_temple_1.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/6/6f/Haedong_yonggungsa_temple_2.jpg"
     ],
     tags: ["해변사찰", "관음대불", "해돋이", "부산"],
     templestay: {
@@ -412,9 +412,9 @@ export const temples = [
       "코엑스와 맞닿은 도심 속 1200년 고찰입니다. 현대식 빌딩숲 사이에 위치하여 도심의 번잡함 속에서도 깊은 고요함을 간직하고 있습니다. 23m 높이의 미륵대불이 강남 빌딩숲을 내려다보고 있으며, 매주 다양한 문화 프로그램이 진행됩니다.",
     shortDesc: "코엑스 옆 강남의 천년고찰, 도심 속 오아시스",
     images: [
-      "https://images.unsplash.com/photo-TXnkB50LDyQ?w=800&q=80",
-      "https://images.unsplash.com/photo-FbYZAV_0VuU?w=800&q=80",
-      "https://images.unsplash.com/photo-Mz4NBECA2DQ?w=800&q=80"
+      "https://upload.wikimedia.org/wikipedia/commons/1/15/Bongeun_Sa_Temple_Seoul.JPG",
+      "https://upload.wikimedia.org/wikipedia/commons/2/2f/Q17278985_Bongeunsa_A01.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/3/33/Q17278985_Bongeunsa_A02.jpg"
     ],
     tags: ["도심사찰", "미륵대불", "강남", "코엑스"],
     templestay: {
